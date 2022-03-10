@@ -1,7 +1,9 @@
 #include<stdio.h>
-/*
- * Program to print a string using puts function
- * return 0
+/**
+ * main - starting point
+ * @void: no arguments
+ * Description: Program to print a string using puts fuction
+ * return: value 0 to exit main fucntion
  */
 int main(void)
 {	
