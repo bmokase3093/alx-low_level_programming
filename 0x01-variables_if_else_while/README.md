@@ -6,3 +6,4 @@ Print alphabets in lowercase except q and e
 Print single digit numbers of base 1o starting with 0
 Print single digits numbers using putchar
 Print lowercase alphabets in reverse
+Print all possible combinations of single digits numbers
