@@ -8,6 +8,7 @@
 int main(void)
 {
 	int firstSLetter, firstCletter, n;
+
 	for (firstSLetter = 97, n = 1; n < 27; firstSLetter++, n++)
 	{
 	putchar(firstSLetter);
