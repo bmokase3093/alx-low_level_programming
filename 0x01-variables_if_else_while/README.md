@@ -3,3 +3,4 @@ Program assign a random number. Print the last digit of the number stored in var
 Print alphabet in lowercas
 Print alphabets in uppercase and then lowercase
 Print alphabets in lowercase except q and e
+Print single digit numbers of base 1o starting with 0
