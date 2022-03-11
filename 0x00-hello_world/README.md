@@ -4,3 +4,4 @@ Script to generate the assembly code of a C code and save it in an output file
 Script that compiles a C file and creates an exe name cisfun
 C Program to print something using puts fuction
 C program to print using printf function
+C Program to print size of various data types
