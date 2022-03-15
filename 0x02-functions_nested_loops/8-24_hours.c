@@ -2,7 +2,7 @@
 /**
  * jack_bauer - prints every minute
  * @void: no parameters
- * Description: Function to print every minute 
+ * Description: Print every minute
  */
 void jack_bauer(void)
 {
