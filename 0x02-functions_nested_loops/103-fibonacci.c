@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	long int i, x = 1, y = 2, sum = 0, evenSum = 0;
+	int i = 1, j = 2, evenSum = 0;
+	int k;
 
-	for (y = 0; y < 4000000; y++)
+	while (j < 4000000)
 	{
-		if ((y % 2 == 0) && (y <= 4000000))
-		{
-			evenSum = evenSum + y;
-		}
-		sum = x + y;
-		y = sum;
+		if (j % 2 == 0)
+			total += j;
+
+		k = j;
+		j += i;
+		i = k;
 	}
-	printf("%ld\n", evenSum);
+	printf("%d\n", total);
 	return (0);
 }
