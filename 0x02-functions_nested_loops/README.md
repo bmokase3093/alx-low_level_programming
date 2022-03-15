@@ -15,3 +15,4 @@ Print the n times table starting with 0
 Sum of multiples of 3 and 5
 Print the first 50 fibonacci numbers starting with 1 and 2
 Find and print the sum of the even-valued terms
+Find and print first 98 fibonacci numbers
