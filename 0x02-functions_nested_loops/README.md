@@ -6,3 +6,4 @@ Check for lowercase characters
 Check for alphabet, lowercase or uppercase
 Print the sign of the number
 Print absolute value of an integer
+Print last digit of the number
