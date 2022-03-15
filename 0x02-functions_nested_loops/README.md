@@ -11,3 +11,4 @@ Print every of the day starting with 00:00 to 23:59
 Print the 9 times table
 Add two integers and return result
 Print all natural numbers from n to 98
+Print the n times table starting with 0
