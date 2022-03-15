@@ -12,3 +12,4 @@ Print the 9 times table
 Add two integers and return result
 Print all natural numbers from n to 98
 Print the n times table starting with 0
+Sum of multiples of 3 and 5
