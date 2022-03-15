@@ -8,38 +8,22 @@
  */
 void print_to_98(int n)
 {
-	if (n == 98)
+	if (n < 98)
 	{
-		printf("%d\n", n);
-	}
-	else if (n < 98)
-	{
-		int j;
-		for (j = n; j < 99; j++)
+		for(; n < 98; n++)
 		{
-			if (j == 98)
-			{
-				printf("%d\n", 98);
-			}
-			else
-			{
-				printf("%d", j);
-			}
+			printf("%d, ", n);
 		}
 	}
 	else if (n > 98)
 	{
-		int j;
-		for (j = n; j > 98;j--)
+		for (; n > 98; n--)
 		{
-			if (j == 98)
-			{
-				printf("%d\n", j);
-			}
-			else
-			{
-				printf("%d", j);
-			}
+			printf("%d, ", n);
 		}
+	}
+	else
+	{
+		printf("%d\n", 98);
 	}
 }
