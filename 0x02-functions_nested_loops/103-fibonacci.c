@@ -8,7 +8,7 @@ int main(void)
 {
 	long int i, x = 1, y = 2, sum = 0, evenSum = 0;
 
-	for (i = 0; i < 4000000; i++)
+	for (y = 0; y < 4000000; y++)
 	{
 		if ((y % 2 == 0) && (y <= 4000000))
 		{
