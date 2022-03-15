@@ -8,3 +8,4 @@ Print the sign of the number
 Print absolute value of an integer
 Print last digit of the number
 Print every of the day starting with 00:00 to 23:59
+Print the 9 times table
