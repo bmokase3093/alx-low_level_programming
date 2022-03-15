@@ -3,3 +3,4 @@ Print _putchar followed by new line
 Print alphabets in lowercase
 Print alphabets x10 in lowercase
 Check for lowercase characters
+Check for alphabet, lowercase or uppercase
