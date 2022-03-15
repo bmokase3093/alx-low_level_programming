@@ -4,3 +4,4 @@ Print alphabets in lowercase
 Print alphabets x10 in lowercase
 Check for lowercase characters
 Check for alphabet, lowercase or uppercase
+Print the sign of the number
