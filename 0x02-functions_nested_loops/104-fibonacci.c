@@ -10,15 +10,12 @@ int main(void)
 
 	for (i = 0; i < 97; i++)
 	{
-		printf("%ld, ", x);
+		printf("%lu, ", x);
 		sum = x + y;
 		x = y;
 		y = sum;
-
 		if (i == 96)
-		{
-			printf("%ld\n", x);
-		}
+			printf("%lu\n", x);
 	}
 	return (0);
 }
