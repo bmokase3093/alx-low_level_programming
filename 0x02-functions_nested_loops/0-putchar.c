@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 /**
  * main - starting point
@@ -7,10 +6,10 @@
  */
 int main(void)
 {
-	char text[7] = "_putchar";
-	int i;
+	char text[8] = "_putchar";
+	int i = 0;
 
-	while(i < 7)
+	while(i < 8)
 	{
 		_putchar(text[i]);
 	}
