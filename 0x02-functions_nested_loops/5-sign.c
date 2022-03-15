@@ -7,7 +7,7 @@
  * Return: 0 and print 0 if n is 0
  * Return: -1 and print - if n < 0
  */
-int print_sign(int)
+int print_sign(int n)
 {
 	int result;
 
