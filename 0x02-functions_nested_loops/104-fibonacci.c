@@ -48,6 +48,6 @@ int main(void)
 		}
 		count++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
