@@ -8,3 +8,4 @@ Functions to draw s straight line
 Draw a diagonal line
 Print a square
 Fizz Buzz test
+Print a triagngle
