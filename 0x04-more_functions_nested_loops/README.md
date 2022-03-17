@@ -7,3 +7,4 @@ Print numbers 0 to 14 ten times
 Functions to draw s straight line
 Draw a diagonal line
 Print a square
+Fizz Buzz test
