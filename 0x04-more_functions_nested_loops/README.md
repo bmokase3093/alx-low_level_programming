@@ -10,3 +10,4 @@ Print a square
 Fizz Buzz test
 Print a triagngle
 Print largest prime factor
+Print an integer
