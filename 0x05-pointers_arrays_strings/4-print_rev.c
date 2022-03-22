@@ -20,7 +20,7 @@ void print_rev(char *s)
 	}
 
 	last = len - 1;
-	for (;last >= 0; last--)
+	for (; last >= 0; last--)
 	{
 		_putchar(s[last]);
 	}
