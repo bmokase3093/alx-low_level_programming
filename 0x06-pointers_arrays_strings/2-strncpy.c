@@ -10,15 +10,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int countBytes;
+	char *_strncpy(char *dest, char *src, int n)
+{
+	int byteCount;
 
-	for (countBytes = 0; countBytes < n && src[countBytes] != '\0'; countBytes++)
-	{
-		dest[countBytes] = src[countBytes];
-		for (; countBytes < n; countBytes++)
-		{
-			dest[countBytes] = '\0';
-		}
-	}
+	for (byteCount = 0; byteCount < n && src[byteCount] != '\0'; byteCount++)
+		dest[byteCount] = src[byteCount];
+		for (; byteCount < n; byteCount++)
+			dest[byteCount] = '\0';
+
 	return (dest);
+}
 }
