@@ -35,7 +35,7 @@ int _atoi(char *s)
 		}
 		index++;
 	}
-	if (sign < 0 )
+	if (sign < 0)
 	{
 		result *= sign;
 	}
