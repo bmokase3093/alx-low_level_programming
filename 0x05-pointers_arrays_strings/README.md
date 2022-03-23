@@ -9,3 +9,4 @@ Prints half of a string
 Function that prints n elements of an array of integers, followed by new line
 Function that points a string pointed to by src, including the terminating null byte to buffer pointed to by dest
 Convert string ti integer
+Program that generate random valid password for the program 101-crackme
