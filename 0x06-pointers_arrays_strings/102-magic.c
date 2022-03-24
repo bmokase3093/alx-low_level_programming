@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - print a magic number
+ * Description: Print a magic number by adding one line
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
