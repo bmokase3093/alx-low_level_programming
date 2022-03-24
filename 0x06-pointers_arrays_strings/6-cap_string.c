@@ -8,25 +8,28 @@
  */
 char *cap_string(char *s)
 {
-	int length, i;
-	char separator[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int count;
 
-	for (length = 0; s[length] != '\0'; length++)
-	{
-		if (length == 0 && s[length] >= 97 && s[length] <= 122)
+/*  scan through string */
+	count = 0;
+	while (s[count] != '\0')
+	{/* if next character after count is a char , capitalise it */
+		if (s[0] >= 97 && s[0] <= 122)
 		{
-			s[length] -= 32;
+			s[0] = s[0] - 32;
 		}
-		for (i = 0; i < 13; i++)
+		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
+		    || s[count] == ',' || s[count] == ';' || s[count] == '.'
+		    || s[count] == '.' || s[count] == '!' || s[count] == '?'
+		    || s[count] == '"' || s[count] == '(' || s[count] == ')'
+		    || s[count] == '{' || s[count] == '}')
 		{
-			if (s[length] == separator[i])
+			if (s[count + 1] >= 97 && s[count + 1] <= 122)
 			{
-				if (s[length + 1] >= 97 && s[length + 1] <= 122)
-				{
-					s[length + 1] -= 32;
-				}
+				s[count + 1] = s[count + 1] - 32;
 			}
 		}
+		count++;
 	}
 	return (s);
 }
