@@ -12,24 +12,20 @@
  */
 char *leet(char *s)
 {
-	int strCount, leetCount;
-	char leetL [] = "aAeEoOtTlL";
-	char leetNums[] = "4433007711";
+	int i, j;
 
-	/* Scan the string */
-	strCount = 0;
-	while (s[strCount] != '\0')
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		leetCount = 0;
-		while (leetCount < 10)
+		for (j = 0; j < 10; j++)
 		{
-			if (leetL[leetCount] == s[strCount])
+			if (s[i] == a[j])
 			{
-				s[strCount] = leetNums[leetCount];
+				s[i] = b[j];
 			}
-			leetCount++;
 		}
-		strCount++;
 	}
 	return (s);
 }
