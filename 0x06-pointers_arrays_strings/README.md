@@ -5,3 +5,4 @@ Compare two strings
 Function that reverse the content of an array
 Function to change a string to uppercase
 Function that capitalizes all the words of a string
+Function that ecodes a string to 1337
