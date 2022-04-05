@@ -4,3 +4,4 @@ function that concatenate two strings
 Function that returns a pointer to a two dimensional array of integers
 Function that frees a 2 dimensional grid previously created by alloc_grid function
 Concatenate all the arguments of your program
+Function that splits a string into words
