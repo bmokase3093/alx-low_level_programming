@@ -3,3 +3,4 @@ Write function that initialize a variable of type struct dog
 Write function that print struct dog
 Define a new type dog_t as anew name for the type struct dog
 Write a function that creates a new dog
+Write a function that free dogs
