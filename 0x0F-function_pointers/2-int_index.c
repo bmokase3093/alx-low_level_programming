@@ -1,4 +1,6 @@
 #include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * int_index - searches an int within an array using the cmp function
