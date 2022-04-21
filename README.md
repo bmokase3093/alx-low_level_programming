@@ -12,3 +12,4 @@ Working with C Preprocessor
 Working with struct and typedef
 C Pointers to functions
 C Variadic functions
+C Linked List
