@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * add_node - adds a new node at the beginning of a list_t list.
  * @head: a double pointer to a list_t linked list
@@ -9,22 +8,22 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-    list_t *temp;
+	list_t *temp;
 
-    if (head && str)
-    {
-        temp = malloc(sizeof(list_t));
-        if (!temp)
-            return (NULL);
+	if (head && str)
+	{
+		temp = malloc(sizeof(list_t));
+		if (!temp)
+			return (NULL);
 
-        temp->str = strdup(str);
-        temp->len = _strlen(str);
-        temp->next = *head;
+		temp->str = strdup(str);
+		temp->len = _strlen(str);
+		temp->next = *head;
 
-        *head = temp;
-    }
+		*head = temp;
+	}
 
-    return (temp);
+	return (temp);
 }
 
 /**
@@ -34,10 +33,10 @@ list_t *add_node(list_t **head, const char *str)
  */
 int _strlen(const char *s)
 {
-    int i = 0;
+	int i = 0;
 
-    while (*s++)
-        i++;
-    
-    return (i);
+	while (*s++)
+		i++;
+
+	return (i);
 }
