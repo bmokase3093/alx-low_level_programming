@@ -10,7 +10,6 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- *
  */
 typedef struct listint_s
 {
@@ -20,4 +19,5 @@ typedef struct listint_s
 
 /* Declare funtion prototypes */
 size_t print_listint(const listint_t *h);
+
 #endif
