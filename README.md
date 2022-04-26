@@ -13,3 +13,4 @@ Working with struct and typedef
 C Pointers to functions
 C Variadic functions
 C Linked List
+More of C singly linked lists
