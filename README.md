@@ -14,3 +14,4 @@ C Pointers to functions
 C Variadic functions
 C Linked List
 More of C singly linked lists
+C Bit Manipulation or Bitwise Operators
