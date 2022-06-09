@@ -1,68 +1,52 @@
 #include "lists.h"
 
 /**
-  * delete_dnodeint_at_index - deletes node at index index of list.
-  * @head: double pointer to list.
-  * @index: index of node to be deleted.
-  *
-  * Return: 1 if it succeeded, -1 if it failed.
-  */
+ * delete_dnodeint_at_index - deletes the node at index of a
+ * dlistint_t linked list
+ *
+ * @head: head of the list
+ * @index: index of the new node
+ * Return: 1 if it succeeded, -1 if it failed
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp, *temp2, *tp;
-	unsigned int len = dlistint_len2(*head);
+	dlistint_t *h1;
+	dlistint_t *h2;
+	unsigned int i;
 
-	if (*head == NULL || len < index)
-		return (-1);
-	temp = *head;
-	if (index == 0 && (*head)->next == NULL)
+	h1 = *head;
+
+	if (h1 != NULL)
+		while (h1->prev != NULL)
+			h1 = h1->prev;
+
+	i = 0;
+
+	while (h1 != NULL)
 	{
-		free(temp), *head = NULL;
-		return (1);
-	}
-	if (index ==  0 && (*head)->next != NULL)
-	{
-		*head = (*head)->next;
-		(*head)->prev = NULL;
-	}
-	if (index > 0)
-	{
-		while (index != 0)
-			temp = temp->next, index--;
-		if (temp->next == NULL)
+		if (i == index)
 		{
-			tp = *head;
-			while (tp->next != NULL)
-				tp = tp->next;
-			temp2 = tp->prev;
-			temp2->next = NULL, free(tp);
+			if (i == 0)
+			{
+				*head = h1->next;
+				if (*head != NULL)
+					(*head)->prev = NULL;
+			}
+			else
+			{
+				h2->next = h1->next;
+
+				if (h1->next != NULL)
+					h1->next->prev = h2;
+			}
+
+			free(h1);
 			return (1);
 		}
-		temp2 = temp->prev;
-		temp2->next = temp->next;
-		temp->next->prev = temp2;
+		h2 = h1;
+		h1 = h1->next;
+		i++;
 	}
-	free(temp);
-	return (1);
-}
 
-/**
-  * dlistint_len2 - returns number of elements in a lineked dlistint_t list.
-  * @h: pointer to list.
-  *
-  * Return: number of elements in list.
-  */
-unsigned int dlistint_len2(dlistint_t *h)
-{
-	dlistint_t *temp;
-	unsigned int count;
-
-	temp = h;
-	count = 0;
-	while (temp != NULL)
-	{
-		temp = temp->next;
-		count++;
-	}
-	return (count);
+	return (-1);
 }
