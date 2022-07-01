@@ -15,3 +15,7 @@ C Variadic functions
 C Linked List
 More of C singly linked lists
 C Bit Manipulation or Bitwise Operators
+C File Input/Output
+Working with doubly Linked list
+C Dynamic Libraries
+Working with Hash Tables Data Structure
